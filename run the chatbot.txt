@@ -1,0 +1,14 @@
+In PowerShell, from the project folder:
+.\.venv\Scripts\Activate.ps1
+ollama list
+python -m streamlit run app.py
+
+If setting up for the first time:
+py -3 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+ollama pull mimo-v2.6
+python -m streamlit run app.py
+
+Open the local URL Streamlit prints, usually http://localhost:8501. 
